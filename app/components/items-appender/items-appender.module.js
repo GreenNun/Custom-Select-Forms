@@ -17,6 +17,11 @@ angular.module('itemsAppender', [])
                 "snippet": "test"
             });
         };
+
+        $scope.delete = function (index) {
+            // var index = from.indexOf(item);
+            $scope.available.splice(index, 1);
+        };
     }])
     .directive('parametersAppender', function () {
         return {
